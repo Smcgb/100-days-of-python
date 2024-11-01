@@ -6,7 +6,7 @@ class QuizBrain:
 
     def still_has_questions(self):
         while self.question_number < len(self.question_list):
-            print)f"Your current score is {self.score}"
+            print(f"Your current score is {self.score}")
             self.ask_question()
 
         print(f"Your final score is {self.score}/{len(self.question_list)}")
@@ -14,7 +14,7 @@ class QuizBrain:
     def next_question(self):
         try:
             self.question_number += 1
-        except IndexException:
+        except Exception:
             print("Out of Questions!")
 
     def ask_question(self):
