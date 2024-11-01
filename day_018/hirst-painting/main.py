@@ -9,6 +9,7 @@ screen.colormode(255)
 startx = -600
 starty = -500
 colors = colorgram.extract('hirst.jpg', 10)
+timmy.hideturtle()
 
 while starty <= 500:
     timmy.teleport(startx, starty)
@@ -18,12 +19,11 @@ while starty <= 500:
         timmy.color(r,g,b)
         timmy.pd()
         timmy.begin_fill()
-        timmy.circle(10)
+        timmy.circle(20)
         timmy.end_fill()
         timmy.pu()
-        timmy.forward(30)
-    starty += 30
-
+        timmy.forward(60)
+    starty += 60
 
 print(screen.screensize())
 screen.exitonclick()
